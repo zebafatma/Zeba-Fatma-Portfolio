@@ -1,0 +1,111 @@
+/* Full-screen layout */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0b4b66, #0f7b6c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+/* Center container */
+.welcome-container {
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.content {
+  position: relative;
+  opacity: 1;
+}
+
+/* MUCH BIGGER TITLE */
+.title {
+  font-size: 6rem;          /* increased from 4rem */
+  margin: 0;
+  letter-spacing: 4px;
+  font-weight: 900;
+  text-transform: uppercase;
+  animation: slideDown 1.4s ease;
+}
+
+/* Larger name */
+.name {
+  font-size: 3rem;          /* increased from 2rem */
+  font-weight: 300;
+  margin-top: 20px;
+  animation: fadeUp 1.8s ease;
+}
+
+.name span {
+  font-weight: 800;
+  color: #d1f7f0;
+}
+
+/* Larger subtitle */
+.subtitle {
+  font-size: 1.4rem;        /* increased from 1.1rem */
+  margin-top: 18px;
+  opacity: 0.95;
+  font-weight: 300;
+  animation: fadeUp 2.1s ease;
+}
+
+/* Bigger button */
+.enter-btn {
+  margin-top: 40px;
+  padding: 16px 40px;
+  font-size: 1.2rem;        /* increased size */
+  font-weight: 700;
+  color: white;
+  background: rgba(255,255,255,0.12);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.enter-btn:hover {
+  background: rgba(255,255,255,0.22);
+  transform: scale(1.08);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideDown {
+  0% {transform: translateY(-40px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes fadeUp {
+  0% {transform: translateY(50px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+
+/* Profile Image with Glow Ring */
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* Glow Ring */
+  border: 6px solid rgba(255, 255, 255, 0.8);
+  box-shadow:
+      0 0 18px rgba(255, 255, 255, 0.75),
+      0 0 32px rgba(15, 123, 108, 0.5),
+      0 0 48px rgba(11, 75, 102, 0.4);
+
+  margin-bottom: 32px;
+  animation: fadeUp 1.3s ease;
+}
+
+
