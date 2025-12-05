@@ -1,304 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zeba Fatma — Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | Zeba Fatma</title>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="welcome.css">
 
-  <!-- jQuery CDN -->
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1>Zeba Fatma</h1>
-        <p class="tagline">Computer Science Student • Software Developer • Data Enthusiast</p>
-      </div>
+  <div class="welcome-container">
+    <div class="content">
+      <img src="photo.jpg" class="profile-pic">
+      <h1 class="title">Welcome</h1>
+      <h2 class="name">I'm <span>Zeba Fatma</span></h2>
 
-      <nav class="main-nav" role="navigation" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <p class="subtitle">Computer Science Student • Developer • Creator</p>
 
-      <a class="btn-outline resume-btn" href="resume.pdf" target="_blank" id="download-resume">Download Resume</a>
+      <button id="enter-btn" class="enter-btn">Enter Portfolio →</button>
     </div>
-  </header>
-
-  <main>
-      <!-- Pretty Popup -->
-<div id="popup" class="popup">
-  <p id="popup-text"></p>
-</div>
-    <!-- HERO / ABOUT -->
-    <section id="about" class="panel container">
-      <div class="about-grid">
-        <div class="about-left">
-          <h2>About</h2>
-          <p class="lead">
-            I am a Computer Science undergraduate (CGPA 9.425) at CMR Institute of Technology, Bengaluru (Class of 2027), with hands-on experience in Python, data analysis, web development and embedded systems. I enjoy designing clean, reliable software and building data-driven solutions. I’m looking for internships and roles where I can apply engineering rigor and continuously learn new technologies.
-          </p>
-
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:zeb.iicm@gmail.com">zeb.iicm@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+918789839136">+91 87898 39136</a></li>
-            <li><strong>Location:</strong> Bengaluru, Karnataka, India</li>
-            <li class="socials">
-              <a href="https://www.linkedin.com/in/zebafatma" target="_blank">LinkedIn</a> •
-              <a href="https://github.com/zebafatma" target="_blank">GitHub</a> •
-              <a href="https://leetcode.com/u/_zeba18/" target="_blank">LeetCode</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="about-right card">
-          <h3>Quick Facts</h3>
-          <ul class="facts">
-            <li><strong>Current:</strong> BE — Computer Science, CMRIT (2027)</li>
-            <li><strong>Internship:</strong> Unified Mentor — Python & Data Analysis (Apr 2025 — Oct 2025)</li>
-            <li><strong>Languages:</strong> English, Hindi</li>
-            <li><strong>Hobbies:</strong> Singing, Dancing, Drawing</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="panel container">
-      <h2>Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill card">
-          <h4>Programming</h4>
-          <p>Python · Java · C</p>
-          <div class="progress" data-value="90"><span class="bar"></span></div>
-        </div>
-
-        <div class="skill card">
-          <h4>Data & ML</h4>
-          <p>Pandas · NumPy · Matplotlib · Scikit-learn</p>
-          <div class="progress" data-value="50"><span class="bar"></span></div>
-        </div>
-
-        <div class="skill card">
-          <h4>Web & Databases</h4>
-          <p>HTML · CSS · React Native · Flask · MySQL · MongoDB</p>
-          <div class="progress" data-value="75"><span class="bar"></span></div>
-        </div>
-
-        <div class="skill card">
-          <h4>Tools</h4>
-          <p>Git · VS Code · Jupyter · Eclipse</p>
-          <div class="progress" data-value="80"><span class="bar"></span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-   <section id="projects" class="panel container">
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <div class="project card project-item">
-      <div class="project-header">
-        <h3>College Companion App</h3>
-        <p class="keywords">React Native • Expo • Offline Storage</p>
-        <button class="toggle-btn">Show More</button>
-      </div>
-
-      <div class="project-content">
-        <p>
-          The College Companion App is a multi-utility mobile application developed using React Native (Expo) to help students manage their academic activities efficiently. The app includes a smart timetable, attendance tracker, assignment manager, and customizable Pomodoro timer. Offline data persistence is achieved using AsyncStorage, enabling the app to function seamlessly without internet. It features a modern neon-themed UI with reusable components, dynamic validations, and smart tools like automatic attendance percentage calculation, deadline alerts, and error-free timetable input. The goal of the app is to enhance student productivity through an intuitive design and intelligent features.
-        </p>
-        <a href="https://github.com/zebafatma/College_Companion_App" class="chip">View Code</a>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project card project-item">
-      <div class="project-header">
-        <h3>Hotel Management System</h3>
-        <p class="keywords">Python • MySQL • Flask</p>
-        <button class="toggle-btn">Show More</button>
-      </div>
-
-      <div class="project-content">
-        <p>
-          The Hotel Management System is a full-stack software solution built using Python and MySQL, designed to simplify hotel operations such as guest registration, room allocation, reservations, check-ins, and check-outs. The system uses a normalized relational database for maintaining data accuracy and preventing redundancy. CRUD functionalities allow admins to seamlessly manage bookings and room statuses. A Flask-based web interface provides a clean and user-friendly platform for interacting with the entire system. The solution was engineered to improve operational workflow and ensure efficient information handling within hospitality environments.
-        </p>
-        <a href="https://github.com/zebafatma/Hotel_Management_System" class="chip">View Code</a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project card project-item">
-      <div class="project-header">
-        <h3>Smart Vehicle</h3>
-        <p class="keywords">Arduino • Sensors • C</p>
-        <button class="toggle-btn">Show More</button>
-      </div>
-
-      <div class="project-content">
-        <p>
-          The Smart Vehicle is an Arduino-based obstacle detection and avoidance system built using ultrasonic sensors and C programming. The vehicle is capable of detecting obstacles in real time and making intelligent decisions such as stopping or changing direction to prevent collisions. The system’s responsiveness was enhanced by optimizing sensor input handling and motor control logic. This project demonstrates embedded system design, sensor integration, and real-time control techniques applicable to robotics and automation.
-        </p>
-        <a href="https://github.com/zebafatma/Smart_Vehicle" class="chip">View Code</a>
-
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project card project-item">
-      <div class="project-header">
-        <h3>Real-Time Language Translator</h3>
-        <p class="keywords">Python • SpeechRecognition • gTTS</p>
-        <button class="toggle-btn">Show More</button>
-      </div>
-
-      <div class="project-content">
-        <p>
-          This real-time language translator is built using Python, SpeechRecognition, and Google Text-to-Speech (gTTS). The program listens to user speech, converts it into text, translates it into English, and outputs the result audibly using text-to-speech synthesis. It supports multiple languages and provides a seamless interactive experience with minimal delay. The project showcases end-to-end natural language processing, audio capturing, translation workflows, and voice-based output generation for accessibility and real-time communication.
-        </p>
-        <a href="https://github.com/zebafatma/Real_Time_Language_Translator" class="chip">View Code</a>
-
-      </div>
-    </div>
-
   </div>
-</section>
 
-    <!-- EXPERIENCE / INTERNSHIP -->
-    <section id="experience" class="panel container">
-      <h2>Experience</h2>
+  <script>
+    // Fade-in animation on load
+    $(document).ready(function() {
+      $(".content").css({opacity: 0, transform: "translateY(30px)"});
+      setTimeout(function(){
+        $(".content").animate({opacity: 1, top: 0}, 800);
+      }, 200);
+    });
 
-      <div class="timeline">
-        <div class="timeline-item card">
-          <time>Apr 2025 — Oct 2025</time>
-          <h4>Unified Mentor — Intern</h4>
-          <p class="muted">Python & Data Analysis</p>
-          <ul>
-            <li>Performed dataset analysis with Pandas, NumPy and Matplotlib; produced visual reports.</li>
-            <li>Learned fundamentals of machine learning: preprocessing, model building and evaluation.</li>
-            <li>Completed 6 data-focused projects, building analytical and presentation skills.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="panel container">
-      <h2>Education</h2>
-
-      <div class="edu-grid">
-        <div class="card">
-          <h4>Bachelor of Engineering — Computer Science & Technology</h4>
-          <p class="muted">CMR Institute of Technology, Bengaluru</p>
-          <p><strong>CGPA:</strong> 9.425 (Pursuing, 2027)</p>
-        </div>
-
-        <div class="card">
-          <h4>12th Standard — Science</h4>
-          <p class="muted">Kids Garden Secondary School, Jharkhand</p>
-          <p><strong>Percentage:</strong> 80% (2022)</p>
-        </div>
-
-        <div class="card">
-          <h4>10th Standard — CBSE</h4>
-          <p class="muted">Kids Garden Secondary School, Jharkhand</p>
-          <p><strong>Percentage:</strong> 87% (2020)</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACTIVITIES & ACHIEVEMENTS -->
-    <section id="activities" class="panel container">
-      <h2>Extracurricular & Achievements</h2>
-
-      <div class="two-col">
-        <div class="card">
-          <h4>Co-curricular</h4>
-          <ul>
-            <li>Seminars: Ola Sankalp (Aug 2024), Computational & Data Science at IISc (2025)</li>
-            <li>Courses: Python Programming, Data Analyst & Scientist (Unified Mentor), Web Development (Django)</li>
-            <li>NSS volunteering: Blood donation, eye checkups, water conservation and teaching sessions.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h4>Achievements & Clubs</h4>
-          <ul>
-            <li>Winner — Mime (Cultura 2025), Winner — Improv (Aura 2023)</li>
-            <li>Winner — Mini Project Exhibition (CMRIT, 2023)</li>
-            <li>Theatre Club member — Mime Head; organized improv & theatre events</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="panel container">
-      <h2>Contact</h2>
-
-      <div class="contact-grid">
-        <div class="card">
-          <h4>Get in touch</h4>
-          <p>If you have an opportunity or would like to collaborate, feel free to reach out.</p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:zeb.iicm@gmail.com">zeb.iicm@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+918789839136">+91 87898 39136</a></li>
-            <li><strong>Address:</strong> Vaishnavi Luxury PG for Ladies, AECS Layout, Brookfield, Bengaluru</li>
-          </ul>
-          <!-- Social Buttons -->
-<div class="social-buttons">
-  <a href="https://www.linkedin.com/in/zebafatma" target="_blank" class="social-btn linkedin">LinkedIn</a>
-  <a href="https://github.com/zebafatma" target="_blank" class="social-btn github">GitHub</a>
-  <a href="https://leetcode.com/u/_zeba18/" target="_blank" class="social-btn leetcode">LeetCode</a>
-</div>
-
-        </div>
-        
-
-        <div class="card">
-          <h4>Quick message</h4>
-          <form id="contact-form" action="mailto:zeb.iicm@gmail.com" method="post" enctype="text/plain" novalidate>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required placeholder="Your name">
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required placeholder="you@example.com">
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Hi Zeba — I am contacting you because..."></textarea>
-
-            <button type="submit" class="btn-primary">Send</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 | Zeba Fatma</p>
-    </div>
-  </footer>
-
-  <!-- External script -->
-  <script src="script.js"></script>
-
-<button id="backToTop">↑</button>
-
+    // Redirect button
+    $("#enter-btn").click(function() {
+      $("body").fadeOut(500, function() {
+        window.location.href = "portfolio.html";
+      });
+    });
+  </script>
 </body>
 </html>
